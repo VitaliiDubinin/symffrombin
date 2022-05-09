@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+
+{% block res %} 
+
+Welcome! 
+
+{% endblock %}
+
+{% block section %} 
+
+Hello! 
+
+{% endblock %}
+
+
+{% block body %}
+
+<h1>
+ <span> {{question|length}}</span>
+
+
+
+
+
+</h1>
+
+
+{% for answer in question %}
+
+
+<h1>
+ <span> {{answer}}</span>
+
+
+
+
+
+</h1>
+{% endfor %}
+
+{% endblock %}
