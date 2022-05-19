@@ -28,8 +28,8 @@ $slug='awesome job';
         $title=u(str_replace('-','-----',$slug))->title(true);
         // return new Response ('string funct testing '.$title);
 
-return $this->render('question/show.html.twig',['question'=>$title,],);
-$this->render('question/show.html.twig',['answers'=>$answers]);
+return $this->render('question/show.html_2.twig',['question'=>$title,],);
+$this->render('question/show.html_2.twig',['answers'=>$answers]);
 
 
 
@@ -49,7 +49,7 @@ $slug=0;
 
         // return new Response ('string funct testing '.$title);
 
-return $this->render('question/show.html.twig',['question'=>$answers[$slug]]);
+return $this->render('question/show.html_2.twig',['question'=>$answers[$slug]]);
 
 
 
